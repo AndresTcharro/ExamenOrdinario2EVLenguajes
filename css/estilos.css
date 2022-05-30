@@ -1,0 +1,136 @@
+/* Reset, para limpiar lo que los navegadores nos aplican por defecto */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+ }
+
+ .contenedor{
+    
+    display: grid;
+    /* indicamos tanto el numero de columnas (2) con el numero de filas que queremos(4) */
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto ;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgb(151, 15, 15);
+    
+}
+.foto{
+    grid-column: 1 / 2  ;
+    grid-row: 1/ 2;
+}
+.contacto {
+    grid-column: 1 / 2  ;
+    grid-row: 2/ 3;
+    background-color: coral;
+
+}
+.idiomas {
+    grid-column: 1 / 2  ;
+    grid-row: 3/ 4;
+    background-color: rgb(105, 104, 104);
+}
+.datos {
+    grid-column: 2 / 3  ;
+    grid-row: 1 / 3;
+    background-color: white;
+}
+.formulario{
+    grid-column: 2 / 3  ;
+    grid-row: 3/ 4;
+}
+.footer{
+    grid-column: 1/ 3  ;
+    grid-row: 4/ 5;
+}
+
+
+
+
+
+/* FORMULARIO */
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding:0 1rem;
+    
+}
+.field{
+    display: flex;
+    flex-direction: column;
+
+    width: 14rem;
+    margin: 0.5rem 0;
+}
+.field label{
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    color: #696969;
+
+}
+.field input{
+
+    font-size: 1.1rem;
+
+    width: 70%;
+    height: 2.2rem;
+    padding-left: 00.5rem;
+
+    border: 2px solid #696969;
+    border-radius: 5px;
+}
+.textbox{
+
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    margin: 0.75rem 0;
+
+}
+.textbox label{
+
+    font-size: 0.9rem;
+
+    margin-bottom: 00.2rem;
+
+    color: #696969;
+}
+textarea{
+
+    font-size: 1.1rem;
+
+    max-width: 100%;
+    height: 5rem;
+    max-height: 15rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+
+    border: 2px solid #696969;
+    border-radius: 5px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.submit button{
+    font-size: 1.3rem;
+    padding: 0.75rem 1.2rem;
+    border: 2px solid 1.3rem;
+    border-radius: 5px;
+}
